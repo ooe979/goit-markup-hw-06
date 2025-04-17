@@ -224,10 +224,10 @@ address {
 }
 
 /* -----------------section-1------------------------ */
-.section {
+/* .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
 div .container {
   margin: 0;
@@ -238,8 +238,8 @@ div .container {
 
 .section-title {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   margin-bottom: 96px;
 
   display: block;
@@ -256,12 +256,22 @@ div .container {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    /* url(../images/background-ofice.jpg); */
-      url(../images/background-ofice-1x.jpg);
+    url("../images/background/background-mob-min.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 72px;
+  /* padding-top: 72px; */
+}
+
+@media (min-resolution: 2x) {
+  .section-title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/background/background-mob@2x-min.jpg");
+  }
 }
 
 .title {
@@ -277,7 +287,7 @@ div .container {
   /* max-width: 496px; */
   max-width: 216px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .order-button {
@@ -303,13 +313,74 @@ div .container {
 }
 
 /* ---------- 768------------- */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .container {
+@media screen and (min-width: 768px) {
+  /* .container {
+    width: 768px;
+  } */
+
+  .title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+
+  .section-title {
+    max-width: 768px;
+    height: 436px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/background/background-tab-min.jpg");
+  }
+
+  @media (min-resolution: 2x) {
+    .section-title {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/background/background-tab@2x-min.jpg");
+    }
   }
 }
 
 /* -------------1158-------------- */
 @media screen and (min-width: 1158px) {
+  .title {
+    margin-bottom: 48px;
+  }
+
+  .section-title {
+    max-width: 1400px;
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/background/background-desk-min.jpg");
+  }
+
+  @media (min-resolution: 2x) {
+    .section-title {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/background/background-desk@2x-min.jpg");
+    }
+  }
 }
 
 /* -----------------section-2--------------------- */
@@ -379,7 +450,7 @@ div .container {
 }
 
 /* ---------- 768------------- */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
   }
 }
@@ -469,7 +540,7 @@ div .container {
 }
 
 /* ---------- 768------------- */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
   }
 }
@@ -585,7 +656,7 @@ div .container {
 }
 
 /* ---------- 768------------- */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
   }
 }
@@ -672,7 +743,7 @@ div .container {
 }
 
 /* ---------- 768------------- */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
   }
 }
