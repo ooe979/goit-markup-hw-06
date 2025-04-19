@@ -481,7 +481,7 @@ div .container {
   }
 
   .skil-list-title {
-    text-align: center;
+    text-align: start;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -570,7 +570,11 @@ div .container {
 
 /* ---------- 768------------- */
 @media screen and (min-width: 768px) {
-  .container {
+  .team-list {
+    width: 100%;
+    flex-direction: row;
+    gap: 64px 24px;
+    justify-content: center;
   }
 }
 
@@ -689,10 +693,10 @@ div .container {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover {
+/* .portfolio-list-item:hover {
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-}
+} */
 
 .portfolio-list-item:hover .overlay {
   transform: translateY(0);
@@ -700,12 +704,28 @@ div .container {
 
 /* ---------- 768------------- */
 @media screen and (min-width: 768px) {
-  .container {
+  .portfolio-list {
+    flex-direction: row;
+    row-gap: 72px;
+    width: 100%;
+  }
+  .portfolio-list-item {
+    max-width: calc((100% - 24px) / 2);
   }
 }
 
 /* -------------1158-------------- */
 @media screen and (min-width: 1158px) {
+  .portfolio {
+    margin-top: 120px;
+  }
+  .portfolio-list-item {
+    max-width: calc((100% - 48px) / 3);
+  }
+  .portfolio-list-item:hover {
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  }
 }
 
 /* ----------------------footer--------------------- */
